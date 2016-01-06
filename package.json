@@ -1,0 +1,38 @@
+{
+"name": "html-starter",
+"version": "0.0.0",
+"description": "",
+"main": "gulpfile.js",
+"dependencies": {
+"connect-livereload": "*",
+"express": "*",
+"gulp": "*",
+"gulp-autoprefixer": "*",
+"gulp-compass": "*",
+"gulp-concat": "*",
+"gulp-file-include": "*",
+"gulp-flatten": "0.0.4",
+"gulp-imagemin": "*",
+"gulp-minify-css": "*",
+"gulp-rename": "*",
+"gulp-ruby-sass": "^1.0.1",
+"gulp-s3-upload": "*",
+"gulp-sourcemaps": "^1.5.1",
+"gulp-svgmin": "*",
+"gulp-svgstore": "*",
+"gulp-uglify": "*",
+"gulp-uncss": "^1.0.3",
+"gulp-util": "*",
+"gulp-wrap": "*",
+"imagemin": "*",
+"imagemin-pngquant": "*",
+"livereload": "*",
+"tiny-lr": "*"
+},
+"devDependencies": {},
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC"
+}

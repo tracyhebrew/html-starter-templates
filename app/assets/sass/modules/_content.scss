@@ -1,0 +1,86 @@
+// _content.scss
+
+
+/**
+ * Section(s)
+ */
+section {}
+
+  .section--xsmall          { margin: 25px 0; }
+  .section--small           { margin: 40px 0; }
+  .section                  { margin: 70px 0; }
+  .section--large           { margin: 90px 0; }
+  .section--xlarge          { margin: 100px 0; }
+  .section--xxlarge         { margin: 120px 0; }
+  
+  .section-padded--xsmall   { padding-top: 25px; padding-bottom: 25px; }
+  .section-padded--small    { padding-top: 40px; padding-bottom: 40px; }
+  .section-padded           { padding-top: 70px; padding-bottom: 70px; }
+  .section-padded--large    { padding-top: 90px; padding-bottom: 90px; }
+  .section-padded--xlarge   { padding-top: 100px; padding-bottom: 100px; }
+  .section-padded--xxlarge  { padding-top: 120px; padding-bottom: 120px; }
+
+  .section--float-left      { width: 100%; float: left; }
+
+  .section-divider { 
+    width: 100%;
+    border: 1px solid $color-offwhite; 
+  }
+
+  .section__header {
+    margin-bottom: 60px;
+    text-align: center;
+
+    &.section__header--small { margin-bottom: 35px } 
+  }
+
+  .section__footer {
+    margin-top: 60px;
+    text-align: enter;
+
+    &.section__footer--small { margin-top: 40px } 
+  }
+    
+
+/**
+ * Articles
+ */
+article {}
+
+
+
+
+
+/**
+ * Iframe container
+ */
+.iframe-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+
+  iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/**
+ * Reponsive container
+ */
+.responsive-container, %responsive-container {
+  position: relative;
+  width: 100%;
+}
+
+.responsive-container img,
+.responsive-img {
+  width: 100%;
+  height: auto;
+}

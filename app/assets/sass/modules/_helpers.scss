@@ -1,0 +1,56 @@
+// _helpers.scss
+
+
+
+/**
+ * Colors
+ */
+.color-primary      { color: $color-primary; }
+.color-secondary    { color: $color-secondary; }
+.color-tertiary     { color: $color-tertiary; }
+
+.white              { color: #fff; }
+.white-transparent  { color: rgba(255, 255, 255, 0.80); }
+
+.gray               { color: $color-primary-gray; }
+.text-gray          { color: $color-gray-text; }
+.text-color-default { color: $color-text-default; }
+
+.bg-primary         { background-color: $color-primary; }
+.bg-secondary       { background-color: $color-secondary; }
+.bg-tertiary        { background-color: $color-tertiary; }
+
+.bg-dark            { background-color: #000; color: #fff; }
+.bg-gray            { background-color: $color-gray;}
+.bg-white           { background-color: #fff; }
+
+/**
+ * Borders
+ */
+.border-primary 		{ border-color: $color-primary; }
+.border-secondary 	{ border-color: $color-secondary; }
+
+/**
+ * Font Extension Classes
+ *
+ * Weights
+ * Styles
+ * Families
+ * Decoration
+ * Sizes
+ */
+
+// Weights
+.light-cond   { font-weight: 200; }
+.light        { font-weight: 300; }
+.normal       { font-weight: normal; }
+.semibold     { font-weight: 600; }
+.medium       { font-weight: 600; }
+.black        { font-weight: 800; }
+.bold         { font-weight: bold; }
+
+// Style / Transform / Decoration
+.italic       { font-style:italic; }
+.caps         { text-transform: uppercase; }
+.lowercase    { text-transform: none; }
+.underline    { text-decoration: underline; }

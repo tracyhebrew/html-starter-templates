@@ -1,0 +1,48 @@
+// _fonts.scss
+
+
+@mixin fff($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file-path}.eot');                                        /* IE9 Compat Modes */
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),     /* IE6-IE8 */
+         url('#{$file-path}.woff') format('woff'),                        /* Modern Browsers */
+         url('#{$file-path}.ttf')  format('truetype'),                    /* Safari, Android, iOS */
+         url('#{$file-path}.svg##{$font-family}') format('svg');          /* Legacy iOS */
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+
+// Calibri
+// @include fff(calibri, '../fonts/calibri/calibri', normal);
+// @include fff(calibri, '../fonts/calibri/calibri-bold', bold);
+// @include fff(calibri, '../fonts/calibri/calibri-italic', normal, italic);
+
+
+/**
+ * TypeKit Font Flash Fix
+ */
+// h1, h2, h3, h4, h5, h6, p, span, a, small, table, select, input, i, .faux-table div, label {
+//  opacity: 0;
+//  transition: opacity 0.20s ease-in;
+// }
+// .wf-active {
+//   h1, h2, h3, h4, h5, h6, p, span, a, small, table, select, input, i, .faux-table div, label { opacity:1; }
+// }
+
+
+/**
+ * Chrome v33 "invisible text" fix
+ */
+body {
+-webkit-animation-duration: 0.1s;
+-webkit-animation-name: fontfix;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: linear;
+-webkit-animation-delay: 0.1s;
+}
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to { opacity: 1; }
+}

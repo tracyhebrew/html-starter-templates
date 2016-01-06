@@ -1,0 +1,83 @@
+// _mixins.scss
+
+
+/**
+ * Clearfix
+ */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin font( $size : 16px, $weight : normal, $transform : normal, $baseline : true ) {
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $transform;
+
+  @if $baseline {
+    margin:0;
+    line-height:1;
+  }
+}
+
+/**
+ * Media
+ * 
+ * @param  {Integer} $screen 
+ */
+@mixin media( $screen ) {
+  
+  @if $screen == mobile {
+    @media screen and (max-device-width: 768px) {
+      @content;
+    }
+  }
+  @else {
+    @media screen and (max-width: $screen) {
+      @content;
+    } 
+  }
+}
+
+@mixin retina( ) {
+  @media all and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+  }
+}
+
+@mixin min( $screen ) {
+  @media screen and (min-width: $screen) {
+    @content;
+  } 
+}
+
+
+@mixin shadow() {
+  text-shadow: 1px 1px 1px rgba(0,0,0, 0.15);
+}
+
+
+
+
+@mixin border-radius( $border-radius ) {
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+@mixin transition( $transition... ) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin transform($transform...) {
+  -webkit-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}

@@ -1,0 +1,60 @@
+// _config.scss
+
+/**
+ * Font Sizes
+ */
+$font-default: 			"OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-serif: 				"Courier New", "Georgia", Georgia, serif;
+$fa: 								"FontAwesome", FontAwesome;
+
+
+
+/**
+ * Colors
+ */
+
+$color-primary            : #5db6db; // Blue
+$color-primary-dark       : #2A83A8; // Blue darkened 20%
+// $color-primary-light      : #7cd1f1;
+
+$color-primary-gray       : #9ca6a5;
+$color-primary-gray-dark  : #576065;
+$color-primary-gray-light : #828a8f;
+
+
+$color-secondary          : #fdb723; // Orange
+$color-tertiary           : #c7d952; // Green
+
+$color-anchor-default     : #2267f3; 
+
+$color-gray             	: #cccccc; // Gray
+$color-gray-text        	: #9ca6a5; // Gray Text
+$color-gray-light         : #e1e1e1;
+$color-gray-dark        	: #191919;
+
+$color-offwhite         	: #f5f5f2; // Offwhite
+
+$color-text-default     	: #262729;
+$color-text-offwhite    	: #e1e1e1;
+
+
+$color-success          	: #94df60;
+$color-error            	: #e16060;
+
+/**
+ * Breakpoints
+ */
+$breakpoint-mobile : 767px;
+
+
+/**
+ * Transitions
+ */
+$transitions : (
+  default : ease-in-out, 
+  cubic   : cubic-bezier(.64,.09,.08,1)
+);
+
+
+
+
